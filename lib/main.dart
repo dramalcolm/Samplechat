@@ -3,14 +3,14 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 
 final ThemeData kIOSTheme = new ThemeData(
-  primarySwatch: Colors.orange,
+  primarySwatch: Colors.cyan,
   primaryColor: Colors.grey[100],
   primaryColorBrightness: Brightness.light,
 );
 
 final ThemeData kDefaultTheme = new ThemeData(
-  primarySwatch: Colors.purple,
-  accentColor: Colors.orangeAccent[400],
+  primarySwatch: Colors.black,
+  accentColor: Colors.cyanAccent[400],
 );
 
 const String _name = "Dramalcolm";
@@ -37,7 +37,7 @@ class ChatScreen extends StatefulWidget {
   State createState() => new ChatScreenState();
 }
 
-class ChatScreenState extends State<ChatScreen>{
+class ChatScreenState extends State<ChatScreen> with TickerProviderStateMixin{
   final List<ChatMessage> _messages = <ChatMessage>[];
   final TextEditingController _textController = new TextEditingController();
   bool _isComposing = false;
