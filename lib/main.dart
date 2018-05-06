@@ -133,6 +133,7 @@ class ChatScreenState extends State<ChatScreen> with TickerProviderStateMixin{
       message.animationController.dispose();
     super.dispose();
   }
+
 }
 
 @override
