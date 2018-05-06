@@ -18,6 +18,7 @@ final ThemeData kDefaultTheme = new ThemeData(
 );
 
 const String _name = "Dramalcolm";
+
 final googleSignIn = new GoogleSignIn();
 final analytics = new FirebaseAnalytics();
 
